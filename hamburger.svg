@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 24 24" fill="#fff">
+  <!-- Bottom line -->
+  <path d="M3 18h18v-2H3v2z"/>
+  <!-- Middle line (right-aligned short line) -->
+  <path d="M9 13h12v-2H9v2z"/>
+  <!-- Top line -->
+  <path d="M3 6h18v2H3V6z"/>
+</svg>
