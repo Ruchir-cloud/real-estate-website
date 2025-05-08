@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Radhe Properties</title>
+    <style>
+        :root {
+            --radha-pink: #ff69b4;
+            --krishna-blue: #1e3a8a;
+            --divine-white: #fefefe;
+            --neutral-gray: #444;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--divine-white);
+            color: var(--neutral-gray);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: transparent;
+            color: var(--krishna-blue);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+        }
+
+        .navbar.scrolled {
+            background-color: var(--krishna-blue);
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .radha {
+            color: var(--radha-pink);
+        }
+
+        .properties {
+            color: var(--krishna-blue);
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            cursor: pointer;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #ffc0cb, #fff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: var(--krishna-blue);
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0 20px;
+        }
+
+        .hero button {
+            background-color: var(--radha-pink);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: var(--krishna-blue);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <span class="radha">Shree Radhe</span> <span class="properties">Properties</span>
+        </div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Properties</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>स्वागत है Shree Radhe Properties में</h1>
+        <p>जहाँ सपनों का घर सच होता है</p>
+        <button>हमसे संपर्क करें</button>
+    </header>
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
